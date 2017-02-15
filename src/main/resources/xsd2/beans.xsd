@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:ns="urn:samples.qameta.io"
+           targetNamespace="urn:samples.qameta.io"
+           version="2.1">
+
+    <xs:element name="user" type="ns:User"/>
+
+    <xs:complexType name="User">
+        <xs:sequence>
+            <xs:element name="id" type="xs:int"/>
+            <xs:element name="name" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Profile">
+        <xs:sequence>
+            <xs:element name="id" type="xs:int"/>
+            <xs:element name="login" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
